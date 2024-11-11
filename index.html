@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainee Python Developer (AI-ML Team) - Task</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #2a2a72;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            margin-top: 10px;
+            font-size: 1.5em;
+        }
+        section {
+            padding: 20px;
+        }
+        .task-steps {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .task-steps li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        .task-steps li::before {
+            content: "✔️";
+            margin-right: 10px;
+        }
+        .screencast {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .screencast a {
+            color: #2a2a72;
+            text-decoration: none;
+        }
+        .screencast a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #2a2a72;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Trainee Python Developer (AI-ML Team)</h1>
+        <h2>Task Solution</h2>
+    </header>
+
+    <section>
+        <h2>Task Description</h2>
+        <p>This repository contains my solution to the "Trainee Python Developer (AI-ML Team)" task. The task was designed to evaluate my skills in Python development, including unit testing, profiling, debugging, and using external libraries for data visualization.</p>
+
+        <h2>Task Steps and Implementation:</h2>
+        <ul class="task-steps">
+            <li><strong>Setup:</strong>
+                <ul>
+                    <li>Created a project in <strong>IntelliJ IDEA</strong>.</li>
+                    <li>Set up a virtual environment and added a <code>requirements.txt</code> file to manage dependencies.</li>
+                </ul>
+            </li>
+            <li><strong>Class for Plotting:</strong>
+                <ul>
+                    <li>Implemented a class that handles the plotting of deviations.</li>
+                    <li>The <code>draw_plots</code> function:
+                        <ul>
+                            <li>Reads the provided JSON file (deviation data) as a pandas dataframe.</li>
+                            <li>Draws comparison plots for the different columns.</li>
+                            <li>Saves the plots in a folder called <code>plots</code>.</li>
+                            <li>Returns the file paths to the saved plots.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Jupyter Notebook:</strong>
+                <ul>
+                    <li>Created a <code>Notebook.ipynb</code> file in the root directory to call the <code>draw_plots</code> function and visualize the generated plots.</li>
+                </ul>
+            </li>
+            <li><strong>Data Handling:</strong>
+                <ul>
+                    <li>Downloaded and processed the provided deviation <code>JSON</code> file:</li>
+                    <ul>
+                        <li><code>Gt_corners</code>: Ground truth number of corners in the room.</li>
+                        <li><code>Rb_corners</code>: Number of corners detected by the model.</li>
+                    </ul>
+                    <li>Calculated statistics, including <code>mean</code>, <code>max</code>, and <code>min</code> deviations in degrees.</li>
+                </ul>
+            </li>
+            <li><strong>Unit Testing:</strong>
+                <ul>
+                    <li>Implemented unit tests to verify that the <code>draw_plots</code> function behaves as expected and that the generated plot paths are correct.</li>
+                </ul>
+            </li>
+            <li><strong>Profiler and Debugger:</strong>
+                <ul>
+                    <li>Used <strong>IntelliJ IDEA</strong>'s built-in profiler to capture performance metrics (CPU and memory usage).</li>
+                    <li>Set breakpoints and used the debugger to step through the code and evaluate variables.</li>
+                </ul>
+            </li>
+            <li><strong>GitHub Repository:</strong>
+                <ul>
+                    <li>Uploaded the project to <strong>GitHub</strong>. You can access the repository <a href="https://github.com/Rahimdzx/-AI-ML-team-position-at-DocuSketch.git" target="_blank">here</a>.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="screencast">
+            <h2>Screencast</h2>
+            <p>Recorded a screencast demonstrating the following:</p>
+            <ul>
+                <li>Running the application in <strong>IntelliJ IDEA</strong>.</li>
+                <li>Using unit tests to validate functionality.</li>
+                <li>Using the profiler to assess performance.</li>
+                <li>Using the debugger for step-through debugging and variable evaluation.</li>
+            </ul>
+            <p>You can view the screencast <a href="https://drive.google.com/file/d/1o3zxfc6LkO1hmwRY7Esfr3mjq9mWHqH4/view?t=3" target="_blank">here</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Trainee Python Developer (AI-ML Team). All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
