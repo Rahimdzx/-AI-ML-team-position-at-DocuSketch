@@ -5,62 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trainee Python Developer (AI-ML Team) - Task</title>
     <style>
+        /* Global styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f9f9f9;
             color: #333;
+            line-height: 1.6;
         }
+        
         header {
-            background-color: #2a2a72;
+            background-color: #34495e;
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
+            border-bottom: 5px solid #1abc9c;
         }
+        
         h1, h2 {
             margin: 0;
             padding: 0;
+            font-weight: 600;
         }
+        
         h2 {
-            margin-top: 10px;
             font-size: 1.5em;
+            color: #1abc9c;
         }
+        
+        /* Section styles */
         section {
-            padding: 20px;
+            padding: 30px;
+            max-width: 1100px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
+
         .task-steps {
             list-style-type: none;
             padding-left: 0;
-        }
-        .task-steps li {
-            margin-bottom: 10px;
             font-size: 1.1em;
         }
+        
+        .task-steps li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
         .task-steps li::before {
             content: "✔️";
-            margin-right: 10px;
+            position: absolute;
+            left: 0;
+            color: #1abc9c;
         }
+
+        .task-steps li strong {
+            color: #2c3e50;
+        }
+
         .screencast {
-            margin-top: 20px;
+            margin-top: 30px;
             font-size: 1.2em;
             font-weight: bold;
+            color: #34495e;
         }
+
         .screencast a {
-            color: #2a2a72;
+            color: #1abc9c;
             text-decoration: none;
+            font-weight: normal;
         }
+
         .screencast a:hover {
             text-decoration: underline;
         }
+
         footer {
-            background-color: #2a2a72;
+            background-color: #34495e;
             color: white;
             text-align: center;
-            padding: 15px;
-            position: fixed;
-            width: 100%;
+            padding: 20px;
+            position: relative;
             bottom: 0;
+            width: 100%;
+        }
+
+        /* Links in the document */
+        a {
+            color: #1abc9c;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
